@@ -32,7 +32,7 @@ export function getPlaylistId(link: string): string | undefined {
 }
 
 export async function getPlaylistVideos(playlistId: string): Promise<string[] | undefined> {
-    const key = 'AIzaSyCzELUkHyRrwtLq-EGofc4rsBVpIqSZylc'
+    const key = '${KEY}'
     const endpoint = `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=${playlistId}&key=${key}`
 
     const response = await fetch(endpoint)
