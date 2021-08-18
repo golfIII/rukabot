@@ -1,5 +1,5 @@
 {
-    "token": "MzI1MDg0NDEwODcxNTQ1ODY2.WUM0cw.mkZVBOMGcsSlt4pCrvqJ9bgH9GU",
+    "token": "${TOKEN}",
     "lavalinkPW": "youshallnotpass",
     "commandInfo": {
         "prefix": "ruka"
