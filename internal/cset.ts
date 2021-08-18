@@ -1,4 +1,4 @@
-class CSet<Type> {
+export class CSet<Type> {
     private data: Type[]
     private equality: (lhs: Type, rhs: Type) => boolean
 
@@ -25,5 +25,3 @@ class CSet<Type> {
             yield item
     }
 }
-
-export { CSet }
