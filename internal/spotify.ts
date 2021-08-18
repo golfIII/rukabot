@@ -39,7 +39,7 @@ export async function getAuthCode(): Promise<string | undefined> {
         const response = await fetch('https://accounts.spotify.com/api/token', {
             method: 'POST',
             headers: {
-                'Authorization':'Basic ZTIyNWI2ZTk4YWNkNGI4YmFlYzRkYzA5YTY3NzYxYTY6MjVlZGI0Y2QzZjAyNDVlNjhjNDY3ZDdjMTIzOTA0ZmM=',
+                'Authorization':'Basic ${SPOTIFY_TOKEN}',
                 'Content-Type':'application/x-www-form-urlencoded'
             },
             body: 'grant_type=client_credentials' 
